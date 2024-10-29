@@ -51,6 +51,9 @@
     border-radius: 8px;
     font-size: 14px;
     max-width: 75%;
+    word-wrap: break-word;  /* Ensures long words break onto the next line */
+    white-space: pre-wrap;  /* Preserves whitespace and wraps long messages */
+    overflow-wrap: break-word; /* Fallback for older browsers */
   }
   
   .receiver {
@@ -115,7 +118,7 @@
 .notification-banner {
     display: none; /* Initially hidden */
     position: fixed;
-    top: 10%;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 20px;
